@@ -20,10 +20,10 @@
 #      - OpenCV_INCLUDE_DIRS             : The OpenCV include directories.
 #      - OpenCV_COMPUTE_CAPABILITIES     : The version of compute capability.
 #      - OpenCV_ANDROID_NATIVE_API_LEVEL : Minimum required level of Android API.
-#      - OpenCV_VERSION                  : The version of this OpenCV build: "2.4.9"
+#      - OpenCV_VERSION                  : The version of this OpenCV build: "2.4.10"
 #      - OpenCV_VERSION_MAJOR            : Major version part of OpenCV_VERSION: "2"
 #      - OpenCV_VERSION_MINOR            : Minor version part of OpenCV_VERSION: "4"
-#      - OpenCV_VERSION_PATCH            : Patch version part of OpenCV_VERSION: "9"
+#      - OpenCV_VERSION_PATCH            : Patch version part of OpenCV_VERSION: "10"
 #      - OpenCV_VERSION_TWEAK            : Tweak version part of OpenCV_VERSION: "0"
 #
 #    Advanced variables:
@@ -60,7 +60,11 @@ set(OpenCV_USE_CUFFT    )
 set(OpenCV_USE_NVCUVID  )
 
 # Android API level from which OpenCV has been compiled is remembered
-set(OpenCV_ANDROID_NATIVE_API_LEVEL 8)
+if(ANDROID)
+  set(OpenCV_ANDROID_NATIVE_API_LEVEL 8)
+else()
+  set(OpenCV_ANDROID_NATIVE_API_LEVEL 0)
+endif()
 
 # Some additional settings are required if OpenCV is built as static libs
 set(OpenCV_SHARED OFF)
@@ -71,8 +75,8 @@ set(OpenCV_USE_MANGLED_PATHS FALSE)
 # Extract the directory where *this* file has been installed (determined at cmake run-time)
 get_filename_component(OpenCV_CONFIG_PATH "${CMAKE_CURRENT_LIST_FILE}" PATH CACHE)
 
-if(NOT WIN32 OR OpenCV_ANDROID_NATIVE_API_LEVEL GREATER 0)
-  if(OpenCV_ANDROID_NATIVE_API_LEVEL GREATER 0)
+if(NOT WIN32 OR ANDROID)
+  if(ANDROID)
     set(OpenCV_INSTALL_PATH "${OpenCV_CONFIG_PATH}/../../..")
   else()
     set(OpenCV_INSTALL_PATH "${OpenCV_CONFIG_PATH}/../..")
@@ -110,10 +114,10 @@ mark_as_advanced(FORCE OpenCV_LIB_DIR_OPT OpenCV_LIB_DIR_DBG OpenCV_3RDPARTY_LIB
 # ======================================================
 #  Version variables:
 # ======================================================
-SET(OpenCV_VERSION 2.4.9)
+SET(OpenCV_VERSION 2.4.10)
 SET(OpenCV_VERSION_MAJOR  2)
 SET(OpenCV_VERSION_MINOR  4)
-SET(OpenCV_VERSION_PATCH  9)
+SET(OpenCV_VERSION_PATCH  10)
 SET(OpenCV_VERSION_TWEAK  0)
 
 # ====================================================================

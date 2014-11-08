@@ -1,0 +1,6 @@
+set solib-search-path /Users/niisato/Desktop/of_v0.8.1_android_release/examples/android/androidGuiExample//obj/local/armeabi:/Users/niisato/Desktop/of_v0.8.1_android_release/examples/android/androidGuiExample//libs/armeabi
+directory /Users/niisato/Documents/android-sdk-macosx/android-ndk-r9d/platforms/android-17/arch-arm/usr/include
+directory /Users/niisato/Desktop/of_v0.8.1_android_release/examples/android/androidGuiExample//src
+directory /Users/niisato/Documents/android-sdk-macosx/android-ndk-r9d/sources/cxx-stl/system
+directory /Users/niisato/Desktop/of_v0.8.1_android_release/examples/android/androidGuiExample//libs/armeabi
+
