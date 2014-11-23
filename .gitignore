@@ -24,3 +24,7 @@ proguard/
 
 # Log Files
 *.log
+
+OpenCV/
+tutorial-2-mixedprocessing/
+OpenNI2/
