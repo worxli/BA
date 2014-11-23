@@ -1,0 +1,12 @@
+eclipse.preferences.version=1
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/NDKROOT/delimiter=;
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/NDKROOT/operation=replace
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/NDKROOT/value=C\:/android/ndk
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/OPENCVROOT/delimiter=;
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/OPENCVROOT/operation=append
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/OPENCVROOT/value=D\:\\Documents\\GitHub\\BA\\libs\\OpenCV\\include
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/OPENNIROOT/delimiter=;
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/OPENNIROOT/operation=replace
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/OPENNIROOT/value=D\:\\Documents\\GitHub\\BA\\libs\\OpenNI2
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/append=true
+environment/project/preference.org.eclipse.cdt.managedbuilder.core.configurationDataProvider.1024747186/appendContributed=true
